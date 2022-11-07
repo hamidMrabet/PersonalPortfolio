@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+</header>
+
+<body>
+
+
+<header class="top">
+    <nav>
+        <ul class="menu">
+
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#estudo">Formação</a></li>
+          <li><a href="#habil">Habilidades</a></li>
+          <li><a href="#projeto">Portfolio</a></li>
+          <li><a href="#contact">Contato</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+  
+<aside class='lateral'>
+   
+    <img src="image/IMG-20210322-WA0015(1).jpg" alt='foto de perfil' class='img_perfil'>
+    
+    <div class="social_btn">
+
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    
+    </div>
+
+    
+    <div class="info">
+
+        <span>Olá, Eu Sou</span>
+        <h1>hamid mrabet</h1>
+        <h2>Fontend Desenvolvedor</h2>
+        <hr>
+        <p>Me chamo Hamid, eu sou um desenvolvedor web. Neste portfolio, eu compartilho meus projets relacionados ao front end.</p>
+        <button class="button"><a href="#contact">Me Contactar</a></button>
+    
+    </div>
+
+    
+</aside>
+
+<section id="sobre" class="about">
+
+    <h1>Sobre Mim</h1>
+    <hr>
+    
+    <div class="info_sobre">
+        <ul>
+            <li><i class="fa fa-user"></i>  Hamid Mrabet</li>
+            
+            <li><i class="fa fa-map-marker"></i>  São Paulo, Brasil</li>
+            <li><i class="fa fa-whatsapp"></i>  (11) 97505-4436</li>
+            <li><i class="fa fa-phone"></i>  (+55)1197505-4436</li>
+            <li><i class="fa fa-envelope"></i>  hamidpaulista@gmail.com</li>
+        </ul>
+
+    </div>
+    
+</section>
+
+<section class="formaçao" id="estudo">
+
+    <h1>Formaçãoes</h1>
+    <hr>
+
+    <div class="historico">
+        <ul>
+          <li><span> 2022 </span>: Cursando Fontend da pltaforma<em> Toti</em></li>
+          <li><span> 2001/2004 </span>: Graduaçao em Gestao Empresarial - <em>Universidade ULP</em> (França)</li>
+          <li><span> 1995/1998 </span>: em Economia Empresarial - <em>Universidade Hassan II</em> (Marrocos)</li>
+          <li><span> 2012/2014 </span>: Ensino Medio completo - <em>Colégio Oued Eddahab</em> (Marrocos)</li>
+        </ul>
+
+</section>
+  
+
+
+<section class="skill" id="habil">
+  
+    <h1>Habildades</h1>
+    <hr>
+
+    <div class="frontend">Frontend :</div>
+
+        <h3>HTML</h3>
+
+        <div class="bar">
+           <div class="html_bar"></div>
+        </div>
+    
+        <h3>CSS</h3>
+    
+        <div class="bar">
+           <div class="css_bar"></div>
+        </div>
+
+        <h3>JAVASCRIPT</h3>
+
+        <div class="bar">
+           <div class="js_bar"></div>
+        </div>
+    
+    <div class="lang">Idiomas :</div>
+
+        <h3>ARABE</h3>
+    
+        <div class="idioma">
+           <div class="arabe"></div>
+        </div>
+      
+        <h3>FRANCÊS</h3>
+    
+        <div class="idioma">
+           <div class="francês"></div>
+        </div>
+      
+        <h3>INGLÊS</h3>
+    
+        <div class="idioma">
+           <div class="inglês"></div>
+        </div>
+
+
+      
+</section>
+     
+<section class='projeto' id="projeto">
+
+    <h1>Portfolio</h1>
+    <hr>
+
+    <div class="portfolio_content">
+
+        <div class="portfolio_img">
+
+            <figure>
+            <img src="image/receita_bolos.jpg" alt="receita pudim img" width="300" height="300"> 
+            <figcaption>Pagina HTML para receita de bolo</figcaption>
+            </figure>
+
+            <a href="https://github.com/hamidMrabet/exercice4_html" target="_blank"><button>Saiba Mais   <i class="fa fa-github"></i></button></a>
+        
+        </div>
+
+        <div class="portfolio_img">
+            <figure>
+            <img src="image/portfolio-profissional.png" alt="portfolio icon" width="300" height="300">
+            <figcaption>Responsive Portfolio Website</figcaption>
+            </figure>
+
+            <a href="https://github.com/hamidMrabet/projeto_ForntEnd" target="_blank"><button>Saiba Mais   <i class="fa fa-github"></i></button></a>
+
+        </div>
+    </div>
+</section>
+
+<section class='contact' id="contact">
+
+    <h1>Contacto</h1>
+    <hr>
+    
+    <form action="action_page.php">
+  
+    <label for="fname">Nome</label>
+    <input type="text" id="fname" name="firstname" placeholder="Seu nome...">
+  
+    <label for="lname">Sobrenome</label>
+    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome...">
+  
+    <label for="country">Pais</label>
+    <select id="country" name="country">
+
+        <option value="brasil">Brasil</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="marrocos">Marrocos</option>
+
+    </select>
+  
+    <label for="subject">Mensagem</label>
+    <textarea id="subject" name="subject" placeholder="Seu mensagem aqui..." style="height:200px"></textarea>
+  
+    <input class="enviar" type="submit" value="Enviar">
+  
+    </form>
+  
+    
+</section>
+
+<footer class="rodape">
+    
+    <ul class="redes_sociais">
+
+        <li><a href="https://www.linkedin.com/in/hamid-mrabet/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/hamidMrabet" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+
+    <span> &copy;2022 by Hamid Mrabet </span> 
+
+</footer>
+
+  
+
+
+
+</body>
+</html>
