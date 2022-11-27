@@ -20,40 +20,71 @@ section {
   font-size: 40px;
   color: #0C0553;
 }
- 
-header {
+
+
+nav {
   position: fixed;
+  background: #033A80;
+  height: 80px;
   width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #555;
-  padding: 13px 10%;
 }
 
-.navig {
-  display: flex;
-}
-
-
-.navig a {
-  font-size: 17px;
-  padding: 10px 20px;
-  color: rgb(201, 175, 175);
-  font-weight: 500;
-}
-
-.navig a:hover {
+label.logo {
   color: white;
-  border: 1px solid white;
-  border-radius: 4px;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
+ nav ul {
+   float: right;
+   margin-right: 20px;
+ }
+
+ nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #06F3AF;
+}
+
+nav ul li a.active{
+  border: 2px solid #06F3AF;
+  color: #06F3AF;
+}
+
+nav ul li a.active:hover {
+  background-color: #06F3AF;
+  color: black;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 
 .home {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -108,11 +139,11 @@ header {
   background: #216FF4;
   color: white;
   padding: 7px 15px;
-  border-radius: 30px;
+  border-radius: 5px;
 }
+
 .btn:hover{
   background: #0C0553;
-  box-shadow: 0 5px gray;
 }
  
 
@@ -201,15 +232,19 @@ span {
   background: #033A80;
   border-radius: 0.5rem;
 }
+
 .html_bar {
   width: 80%;
 }
+
 .css_bar {
   width: 70%;
 }
+
 .js_bar {
   width: 50%;
 }
+
 .react_bar {
   width: 30%;
 }
@@ -271,6 +306,11 @@ span {
   place-items: center;
   margin-top: 2rem;
 }
+
+.contact_form p {
+  font-size: 12px;
+}
+
 .contact_form form {
   display: flex;
   flex-direction: column;
@@ -300,12 +340,17 @@ form textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-left: 35%;
-  border-radius: 30px;
+  border-radius: 5px;
   padding: 10px;
+  border: none;
 }
+
 .contact_btn:hover {
   background: #0C0553;
-  box-shadow: 0 5px gray;
+}
+
+input:focus, textarea:focus{
+  background-color: lightyellow;
 }
 
 .footer {
@@ -347,8 +392,7 @@ form textarea {
 
 
 /* Making Responsive */
-
-
+ 
 @media (max-width: 991px) {
   header {
     padding: 18px 4%;
@@ -356,7 +400,15 @@ form textarea {
   section {
     padding: 50px 4%;
   }
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
 }
+
 @media (max-width: 881px) {
   :root {
     --big-font: 2.7rem;
@@ -371,6 +423,36 @@ form textarea {
 
   header {
     padding: 11px 4%;
+  }
+
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li  a{
+    font-size: 20px;
+  }
+  nav ul li a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+
   }
 
   header .navig {

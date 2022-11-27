@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
@@ -10,20 +11,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
 
     <header>
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">Portfólio</label>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#estudo">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+
+            </ul>
+
+        </nav>
         
-        <img src="image/logo.png" class="logo" alt="logo img">
-        <ul class="navig">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#estudo">Formação</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    
     </header>
  
     <section class="home" id="home">
@@ -194,15 +204,21 @@
     </section>
 
     <section class="contact" id="contact">
+
         <div class="heading">
             <h2>Contacto</h2>
         </div>
+
         <div class="contact_form">
-            <form action="">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" name="" id="" placeholder="Seu email" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Seu Mensagem..."></textarea>
-                <input type="button" value="Enviar" class="contact_btn">
+
+            <p>O seu endereço de e-mail não será publicado.</p>
+            <form name="form" method="post" action="" onsubmit="return check_form()" >
+
+                <input type="text" class="text required" value="" placeholder="Nome" name="nome">
+                <input type="email"  id="Email" class="text required" value="" placeholder="E-mail" name="email">
+                <textarea class="required" placeholder="Comentário ..." name="mensagem"></textarea>
+                <button type="submit" name="submit" class="contact_btn" onclick="ValidEmail(document.form.email)">Enviar</button>         
+            
             </form>
         </div>
     </section>
@@ -220,7 +236,7 @@
         <p>&copy;2022 by Hamid Mrabet | All Right Reserved.</p>
     </div>
  
-    <!-- Link JS 
-    <script src="./js/script.js"></script>-->
+    <script src="script.js"></script>
+
 </body>
 </html>
